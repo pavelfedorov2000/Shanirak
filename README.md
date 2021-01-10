@@ -1,9 +1,13 @@
 Shanirak corporate multipage website:
 - HTML5
-- SCSS
+- SCSS:
+  - variables
+  - mixins
+  - @imports
+  - nesting
 - BEM-naming
 - gulp:
-  - modular approach (@@include)
+  - modular approach (@@includes)
   - html, css, js and images minification
   - src --> dist
 - jquery:
