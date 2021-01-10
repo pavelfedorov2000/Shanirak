@@ -1,0 +1,53 @@
+.program {
+
+    min-height: 383px;
+    background-color: $light-gray;
+
+    // .program__content
+
+    &__content {
+        padding: 60px 0;
+        @media(max-width: 767px) {
+            padding: 30px 0;
+        }
+    }
+
+    // .program__info
+
+    &__info {
+        @include flex;
+        align-items: center;
+        margin: 34px 0 20px;
+        @media(max-width: 767px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    // .program__item
+
+    &__item {
+        @media(max-width: 767px) {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+
+    // .program__text
+
+    &__text {
+        max-width: 400px;
+        color: #4F4F4F;
+    }
+
+    // .program__img
+
+    &__img {
+        @include center;
+        img {
+            height: 100%;
+        }
+        @media(max-width: 767px) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.acquaintance {
+
+    min-height: 396px;
+    background-color: $light-gray;
+    padding: 70px 0;
+
+    // .acquaintance__item
+
+    &__item {
+        @media(max-width: 767px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    // .acquaintance__item-subtitle
+
+    &__item-subtitle {
+        margin-bottom: 20px;
+    }
+}

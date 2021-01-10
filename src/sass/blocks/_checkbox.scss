@@ -1,0 +1,35 @@
+input[type="checkbox"] {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    padding-left: 25px;
+}
+
+.checkbox {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid $accent;
+    margin-left: -25px;
+}
+
+input[type="checkbox"]:checked + .checkbox:before {
+    content: '';
+    position: absolute;
+    @include centerXY;
+    width: 9px;
+    height: 9px;
+    background-image: url('../img/icons/checkbox.svg');
+}
+
+.label {
+    padding-left: 25px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #BDBDBD;
+    a {
+        color: $accent;
+    }
+}

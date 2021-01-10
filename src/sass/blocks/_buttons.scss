@@ -1,0 +1,19 @@
+.button {
+    font-family: $roboto;
+    border-radius: $btn-radius;
+    background-color: $accent;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    text-align: center;
+    transition: .3s ease;
+    &:hover {
+        background-color: $blue;
+        color: #ffffff;
+    }
+    &--white {
+        font-family: 'Rubik', sans-serif;
+        background-color: #ffffff;
+        color: $accent;
+    }
+}

@@ -1,0 +1,53 @@
+.welcome {
+
+    @media(max-width: 575px) {
+        margin-bottom: 0;
+    }
+
+    // .welcome__content
+
+    &__content {
+        padding-top: 88px;
+        padding-bottom: 46px;
+    }
+
+    &__img {
+        padding-bottom: 20%;
+    }
+
+    // .welcome__text
+
+    &__text {
+        max-width: 330px / 411px * 100%;
+        @media(max-width: 1200px) {
+            max-width: 100%;
+        }
+    }
+
+    // .welcome__numbers
+
+    &__numbers {
+        max-width: 311px / 411px * 100%;
+        @include flex;
+    }
+
+    // .welcome__num
+
+    &__num {
+        @include column;
+        align-items: center;
+        text-align: center; 
+    }
+
+    // .welcome__num-item
+
+    &__num-item {
+        font-family: $roboto;
+        font-weight: 500;
+        font-size: 52px;
+        line-height: 81px;
+        letter-spacing: 0.1em;
+        color: $dark;
+        margin-bottom: -15px;
+    }
+}

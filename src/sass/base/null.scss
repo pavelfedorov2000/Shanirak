@@ -1,0 +1,46 @@
+* {
+    box-sizing: inherit;
+    &:before, &:after {
+        box-sizing: inherit;
+    }
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-width: 320px;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 70px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+select, button {
+    @include btn;
+}
+
+textarea {
+    resize: none;
+}

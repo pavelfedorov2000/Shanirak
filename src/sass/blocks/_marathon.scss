@@ -1,0 +1,46 @@
+.marathon {
+
+    position: relative;
+    min-height: 473px;
+    background-color: $light-gray;
+    padding-top: 70px;
+    margin-bottom: 176px;
+
+    // .marathon__title
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    // .marathon__text
+
+    &__text {
+        @media(max-width: 767px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    // .marathon__join
+
+    &__join {
+        position: absolute;
+        @include centerX;
+        bottom: -88px;
+        padding: 40px 78px;
+        @media(max-width: 1260px) {
+            top: 100%;
+        }
+        @media(max-width: 767px) {
+            padding: 30px;
+        }
+        @media(max-width: 575px) {
+            padding: 20px;
+        }
+    }
+
+    &__join-title {
+        @media(max-width: 767px) {
+            margin-bottom: 20px;
+        }
+    }
+}

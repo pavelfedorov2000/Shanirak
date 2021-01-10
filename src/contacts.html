@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html')
+
+<body>
+
+    @@include('templates/_header.html')
+
+    <section class="section contact">
+        <div class="section__block contact__left section__block--gray">
+            <div class="container container--pr0">
+                <div class="contact__content">
+                    <form class="contact__form contact-form" action="#">
+                        <h1 class="title contact-form__title title--without-line">
+                            Форма обратной связи
+                        </h1>
+                        <div class="contact-form__fields">
+                            <input class="input contact-form__input" type="text" placeholder="Имя*">
+                            <input class="input contact-form__input" type="tel" placeholder="Телефон*">
+                            <input class="input contact-form__input" type="text" placeholder="Город">
+                            <textarea class="input contact-form__textarea" placeholder="Комментарий"></textarea>
+                        </div>
+                        <label class="label contact-form__agreement">
+                            <input type="checkbox" name="" id="">
+                            <span class="checkbox"></span>
+                            Я согласен на обработку <a href="#">персональных данных</a> и с условиями <a href="#">пользовательского соглашения</a>
+                        </label>
+                        <button class="button contact-form__btn" type="submit">
+                            Отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="section__block contact__right section__block--dark">
+            <div class="container container--pl0">
+                <div class="contact__content contact__info contact-info">
+                    <h2 class="title contact-info__title title--white title--without-line">
+                        Мы на связи
+                    </h2>
+                    <p class="text contact-info__text text--white">
+                        Если вы хотите узнать больше, получить разъяснения на возникшие вопросы или договориться о встрече — заполните контактную форму или выберите удобный для вас способ связи.
+                    </p>
+                    <ul class="contact-info__items">
+                        <li class="contact-info__item">
+                            <span>Телефон:</span>
+                            <a class="phone contact-info__phone" href="tel:+375447562825">
+                                +375 (44) 756 28 25
+                            </a>
+                        </li>
+                        <li class="contact-info__item">
+                            <span>Эл. почта:</span>
+                            <a class="email contact-info__email" href="mailto:ntylkovich@gmail.com">
+                                ntylkovich@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+    
+                    @@include('templates/_socials.html')
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('templates/_footer.html')
+
+    @@include('_js.html')
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+.footer {
+
+    background: #000000;
+    padding: 66px 0 25px;
+    @media(max-width: 767px) {
+        padding: 30px 0;
+    }
+
+    &__left-column {
+        @media(max-width: 991px) {
+            @include column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+
+    // .footer__left-inner
+
+    &__left-inner {
+        @include flex;
+        margin-bottom: 50px;
+        @media(max-width: 1300px) {
+            flex-wrap: wrap;
+        }
+        @media(max-width: 991px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    // .footer__logo
+
+    &__logo {
+        @media(max-width: 1300px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    // .footer__logo-top
+
+    &__logo-top {
+        font-size: 96px;
+        line-height: 120px;
+        &:after {
+            width: 147px;
+            bottom: 20px;
+        }
+    }
+
+    // .footer__text
+
+    &__text {
+        width: 300px;
+        font-size: 16px;
+        line-height: 25px;
+        color: $light-gray;
+        @media(max-width: 991px) {
+            width: 100%;
+        }
+    }
+
+    // .footer__politics
+
+    &__politics {
+        font-family: $sans;
+        font-size: 14px;
+        line-height: 22px;
+        color: $light-gray;
+        text-decoration: underline;
+        margin-bottom: 14px;
+    }
+
+    // .footer__copy
+
+    &__copy {
+        font-family: $sans;
+        font-size: 12px;
+        line-height: 19px;
+        color: #BDBDBD;
+    }
+
+    &__middle-column {
+        display: flex;
+        justify-content: center;
+        @media(max-width: 575px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    // .footer__menu
+
+    &__menu {
+        color: #ffffff;
+        @media(max-width: 575px) {
+            text-align: center;
+        }
+    }
+
+    // .footer__menu-title
+
+    &__menu-title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 18px;
+    }
+
+    // .footer__menu-link
+
+    &__menu-link {
+        text-decoration-line: underline;
+    }
+
+    &__contacts {
+        @media(max-width: 575px) {
+            @include column;
+            align-items: center;
+        }
+    }
+
+    // .footer__phone
+
+    &__phone {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    // .footer__email
+
+    &__email {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 25px;
+    }
+}

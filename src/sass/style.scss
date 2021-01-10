@@ -1,0 +1,52 @@
+@import 'base/vars';
+@import 'base/mixins';
+@import 'base/null';
+@import 'base/main';
+
+
+// components
+@import 'blocks/titles';
+@import 'blocks/buttons';
+@import 'blocks/modal';
+@import 'blocks/slick';
+@import 'blocks/socials';
+@import 'blocks/checkbox';
+
+// common
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/program'; // Казахстан
+@import 'blocks/join';
+
+// pages
+// Home-page
+@import 'blocks/promo';
+@import 'blocks/service';
+@import 'blocks/activity';
+
+// Education
+@import 'blocks/acquaintance';
+@import 'blocks/platform';
+@import 'blocks/marathon';
+@import 'blocks/welcome';
+
+// About
+@import 'blocks/company';
+
+// Marketing
+@import 'blocks/marketing';
+
+// Anti-crisis
+@import 'blocks/anti-crisis';
+@import 'blocks/aim';
+
+// Housing program
+@import 'blocks/social-program';
+@import 'blocks/activation';
+
+// Contacts
+@import 'blocks/contact';
+
+// Registration
+@import 'blocks/bio';
+@import 'blocks/registration';

@@ -1,0 +1,34 @@
+.join {
+
+    width: 744px;
+    min-height: 176px;
+    background-color: $dark;
+    @media(max-width: 767px) {
+        width: 100%;
+    }
+
+    // .join__inner
+
+    &__inner {
+        @include flex;
+        align-items: center;
+        @media(max-width: 650px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    // .join__title
+
+    &__title {
+        //max-width: 377px;
+        @media(max-width: 650px) {
+            width: 100%;
+        }
+    }
+
+    // .join__btn
+
+    &__btn {
+        padding: 8px 25px;
+    }
+}
