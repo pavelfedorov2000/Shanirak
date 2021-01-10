@@ -8,6 +8,7 @@ Shanirak corporate multipage website:
 - BEM-naming
 - gulp:
   - modular approach (@@includes)
+  - .scss --> .css --> .min.css
   - html, css, js and images minification
   - src --> dist
 - jquery:
