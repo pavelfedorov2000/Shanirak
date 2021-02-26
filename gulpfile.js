@@ -9,40 +9,44 @@ let path = {
         css: project_folder + "/css/",
         js: project_folder + "/js/",
         img: project_folder + "/img/",
-        libs: project_folder + "/libs/"
+        fonts: project_folder + "/fonts/",
+        libs: project_folder + "/libs/",
     },
     src: {
-        html: [source_folder + "/*.html", "!" + source_folder + "/_*.html", "!" + source_folder + "/templates/_*.html"],
-        css: source_folder + "/sass/style.scss",
+        html: [source_folder + "/views/*.html", source_folder + "/views/pages/*.html", "!" + source_folder + "/views/_*.html"],
+        css: [source_folder + "/styles/style.scss", "!" + source_folder + "/blocks/modules/**/*.scss"],
         js: source_folder + "/js/script.js",
         img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
-        libs: source_folder + "/libs/**/*"
+        libs: source_folder + "/libs/**/*",
     },
     watch: {
         html: source_folder + "/**/*.html",
-        css: source_folder + "/sass/**/*.scss",
+        css: source_folder + "/**/*.scss",
         js: source_folder + "/js/**/*.js",
         img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
-        libs: source_folder + "/libs/**/*"
+        libs: source_folder + "/libs/**/*",
     },
     clean: "./" + project_folder + "/"
 };
 
-let { src, dest} = require('gulp'),
-    gulp         = require('gulp'),
-    browsersync  = require('browser-sync').create(),
-    fileinclude  = require('gulp-file-include'),
-    del          = require('del'),
-    sass         = require('gulp-sass'),
+let {
+    src,
+    dest
+} = require('gulp'),
+    gulp = require('gulp'),
+    browsersync = require('browser-sync').create(),
+    fileinclude = require('gulp-file-include'),
+    del = require('del'),
+    sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
-    group_media  = require('gulp-group-css-media-queries'),
-    clean_css    = require('gulp-clean-css'),
-    rename       = require('gulp-rename'),
-    uglify       = require('gulp-uglify-es').default,
-    imagemin     = require('gulp-imagemin'),
-    webp         = require('gulp-webp'),
-    webphtml     = require('gulp-webp-html'),
-    htmlmin      = require('gulp-htmlmin');
+    group_media = require('gulp-group-css-media-queries'),
+    clean_css = require('gulp-clean-css'),
+    rename = require('gulp-rename'),
+    uglify = require('gulp-uglify-es').default,
+    imagemin = require('gulp-imagemin'),
+    webp = require('gulp-webp'),
+    webphtml = require('gulp-webp-html'),
+    htmlmin = require('gulp-htmlmin');
 
 function browserSync() {
     browsersync.init({
@@ -57,7 +61,9 @@ function browserSync() {
 function html() {
     return src(path.src.html)
         .pipe(fileinclude())
-        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(htmlmin({
+            collapseWhitespace: true
+        }))
         .pipe(webphtml())
         .pipe(dest(path.build.html))
         .pipe(browsersync.stream());
@@ -116,7 +122,9 @@ function images() {
         .pipe(
             imagemin({
                 progressive: true,
-                svgoPlugins: [{ removeViewBox: false }],
+                svgoPlugins: [{
+                    removeViewBox: false
+                }],
                 interPlaced: true,
                 optimizationLevel: 3 // 0 to 7
             })

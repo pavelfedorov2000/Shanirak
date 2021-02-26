@@ -1,0 +1,16 @@
+.anti-crisis {
+    &__body {
+        width: 37%;
+        padding-bottom: 88px;
+    }
+
+    &__body--right {
+        @media (max-width: 1300px) {
+            padding: 50px 0 50px 50px;
+        }
+    }
+}
+
+.section.anti-crisis__section {
+    margin-bottom: 0;
+}

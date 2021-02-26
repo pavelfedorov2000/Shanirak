@@ -1,0 +1,142 @@
+.bio {
+    background-color: $light-gray;
+    padding-top: 70px;
+
+    @media (max-width: 767px) {
+        padding-top: 50px;
+    }
+
+    &__main {
+        margin-bottom: 40px;
+    }
+
+    // .bio__left
+
+    &__left-column {
+        background-color: #fff;
+        padding: 50px 110px 50px 50px;
+        @media (max-width: 1200px) {
+            padding: 50px;
+        }
+        @media (max-width: 991px) {
+            padding: 30px;
+        }
+        @media (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+        @media (max-width: 575px) {
+            padding: 30px 15px;
+        }
+        figure {
+            margin: 0;
+        }
+    }
+
+    // .bio__left-content
+
+    &__left-content {
+    }
+
+    // .bio__img
+
+    &__img {
+        //width: 520px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    // .bio__name
+
+    &__name {
+        font-size: 24px;
+        line-height: 36px;
+        color: #333333;
+        margin: 30px 0 20px;
+        @media (max-width: 767px) {
+            font-size: 20px;
+            line-height: 27px;
+        }
+    }
+
+    // .bio__question-title
+
+    &__question-title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: $dark;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        @media (max-width: 767px) {
+            font-size: 20px;
+            line-height: 32px;
+        }
+    }
+
+    // .bio__subtitle
+
+    &__subtitle {
+        font-size: 18px;
+        line-height: 27px;
+        color: #333333;
+        margin-bottom: 20px;
+    }
+
+    // .bio__list
+
+    &__list {
+    }
+
+    // .bio__list-item
+
+    &__list-item {
+        position: relative;
+        padding-left: 42px;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 0;
+            width: 18px;
+            height: 18px;
+            background-image: url("../img/icons/check.svg");
+        }
+        @media (max-width: 575px) {
+            padding-left: 30px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    // .bio__action-text
+
+    &__action-text {
+        font-size: 24px;
+        line-height: 36px;
+        color: #333333;
+        margin-top: 20px;
+        margin-bottom: 0;
+        @media (max-width: 767px) {
+            font-size: 20px;
+            line-height: 27px;
+        }
+    }
+
+    &__right-subtitle {
+        max-width: 520px;
+        @media (max-width: 575px) {
+            max-width: 100%;
+        }
+    }
+
+    &__right-list {
+        margin-bottom: 30px;
+    }
+
+    &__benefits-list li {
+        font-size: 18px;
+        line-height: 27px;
+        color: #333333;
+        margin-bottom: 20px;
+    }
+}

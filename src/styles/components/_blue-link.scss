@@ -1,0 +1,19 @@
+.blue-link {
+    display: block;
+    font-family: $roboto;
+    font-size: 14px;
+    line-height: 24px;
+    color: $blue;
+    padding-right: 35px;
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        @include centerY;
+        right: 0px;
+        width: 26px;
+        height: 8px;
+        background-image: url("../img/icons/arrows/more.svg");
+    }
+}

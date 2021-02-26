@@ -1,0 +1,19 @@
+.card {
+    background-color: #fff;
+    border: 1px solid $light-gray;
+    transition: 0.3s ease;
+
+    &:hover {
+        box-shadow: $shadow;
+    }
+
+    &--img {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        &:hover {
+            box-shadow: none;
+        }
+    }
+}

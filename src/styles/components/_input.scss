@@ -1,0 +1,21 @@
+.input {
+    border: 1px solid #bdbdbd;
+    padding: 12px 10px;
+    font-size: 16px;
+    line-height: 19px;
+    color: $gray-text;
+    outline: none;
+
+    &::placeholder {
+        color: $gray-text;
+    }
+
+    &:focus {
+        border-color: $gray-text;
+    }
+
+    @media (max-width: 575px) {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

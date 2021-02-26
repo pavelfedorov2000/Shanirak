@@ -1,5 +1,7 @@
-@@include('hamburger.js')
+@@include('../blocks/modules/hamburger/hamburger.js')
 
-@@include('slider.js')
+@@include('../blocks/modules/promo/promo.js')
 
-@@include('modal.js')
+@@include('../blocks/modules/modal/modal.js')
+
+@@include('../blocks/modules/registration/registration.js')
